@@ -8,5 +8,18 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.5.3",
     "validator": "^13.11.0"
-  }
+  },
+  "name": "authorization",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server.js",
+    "server":"nodemon server.js",
+    "client":"npm start --prefix client",
+    "dev":"concurrently \"npm run server\" \"npm run client \" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
