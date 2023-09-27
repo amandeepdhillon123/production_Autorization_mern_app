@@ -14,10 +14,10 @@ app.use(cors());
 
 app.use(router);
 
-app.use(express.static(path.join(__dirname, "../client/build")));
+app.use(express.static(path.join(__dirname, "./client/build")));
 
 app.get("*", (req, resp) => {
-  return  resp.sendFile(path.join(__dirname, "../client/build/index.html"));
+  return  resp.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 dbConnect();
